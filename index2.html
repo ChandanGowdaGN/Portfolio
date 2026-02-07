@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chandan Gowda G N | Portfolio Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #0b1120;
+    color: #e5e7eb;
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    background: #020617;
+    min-height: 100vh;
+    padding: 30px 20px;
+    position: fixed;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+}
+
+.profile h2 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #38bdf8;
+}
+
+.profile p {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.nav {
+    margin-top: 40px;
+}
+
+.nav a {
+    display: block;
+    text-decoration: none;
+    color: #cbd5f5;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.nav a:hover {
+    background: #38bdf8;
+    color: #020617;
+    font-weight: 600;
+}
+
+/* MAIN CONTENT */
+.main {
+    margin-left: 260px;
+    padding: 40px;
+    width: 100%;
+}
+
+/* HEADER */
+.header h1 {
+    font-size: 36px;
+    color: #38bdf8;
+}
+
+.header p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #cbd5f5;
+}
+
+/* DASHBOARD CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #020617;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.card h3 {
+    color: #38bdf8;
+    font-size: 18px;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+.section {
+    margin-top: 60px;
+}
+
+.section h2 {
+    font-size: 28px;
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    background: #38bdf8;
+    color: #020617;
+    padding: 8px 15px;
+    margin: 6px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* PROJECT */
+.project {
+    background: #020617;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+/* CONTACT */
+.contact a {
+    display: block;
+    text-decoration: none;
+    color: #cbd5f5;
+    margin: 10px 0;
+}
+
+.contact a:hover {
+    color: #38bdf8;
+}
+
+footer {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 14px;
+    color: #94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <div class="profile">
+        <img src="WhatsApp Image 2026-02-07 at 9.57.07 AM.jpeg" alt="Chandan Gowda G N">
+        <h2>Chandan Gowda G N</h2>
+        <p>Computer Science and Business System Student</p>
+    </div>
+
+    <div class="nav">
+        <a href="#dashboard">📊 Dashboard</a>
+        <a href="#about">👤 About</a>
+        <a href="#projects">💻 Projects</a>
+        <a href="#skills">🛠 Skills</a>
+        <a href="#contact">📞 Contact</a>
+    </div>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+    <div class="header" id="dashboard">
+        <h1>Portfolio Dashboard</h1>
+        <p>Java Developer • Business-Oriented Thinker • Lifelong Learner</p>
+    </div>
+
+    <!-- STATS -->
+    <div class="cards">
+        <div class="card">
+            <h3>Projects</h3>
+            <p>3+</p>
+        </div>
+        <div class="card">
+            <h3>Certifications</h3>
+            <p>2</p>
+        </div>
+        <div class="card">
+            <h3>Core Skills</h3>
+            <p>7+</p>
+        </div>
+        <div class="card">
+            <h3>Learning Mode</h3>
+            <p>Active 🚀</p>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="section" id="about">
+        <h2>About Me</h2>
+        <div class="project">
+            <p>
+                I am a Computer Engineering student with strong interest in
+                Java development, database systems, and business-driven solutions.
+                I enjoy building practical projects that combine technology,
+                management concepts, and strategic thinking.
+            </p>
+        </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section" id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Bank Account Management System (Java)</h3>
+            <p>
+                Java-based mini project implementing account creation,
+                deposits, withdrawals, balance inquiry, and transaction handling
+                using Object-Oriented Programming principles.
+            </p>
+        </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section" id="skills">
+        <h2>Skills</h2>
+        <div class="project skills">
+            <span>Java</span>
+            <span>DBMS</span>
+            <span>OOP</span>
+            <span>Problem Solving</span>
+            <span>Operational Research</span>
+            <span>Fundamentals of Management</span>
+            <span>Strategic Thinking</span>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="section" id="contact">
+        <h2>Contact</h2>
+        <div class="project contact">
+            <a>📧 Email: your-chandan.gn05@gmail.com</a>
+            <a href="#">💼 LinkedIn: linkedin.com/in/www.linkedin.com/in/chandan-gowda-g-n-2772b73ab</a>
+            <a href="#">💻 GitHub: github.com/
+ChandanGowdaGN</a>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 | Chandan Gowda G N | Portfolio Dashboard
+    </footer>
+
+</div>
+
+</body>
+</html>
